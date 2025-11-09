@@ -1,0 +1,160 @@
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+.card:nth-child(1) { background-color: #e3f2fd; } /* To-Do */
+.card:nth-child(2) { background-color: #fce4ec; } /* Stopwatch */
+.card:nth-child(3) { background-color: #e8f5e9; } /* Progress */
+.card:nth-child(4) { background-color: #fff3e0; } /* Notes */
+.card:nth-child(5) { background-color: #e5d6fc; } /* Schedule */
+.card:nth-child(6) { background-color: #cff6f7; } /* Ask AI */
+.card:nth-child(7) { background-color: #fdd5f6; } /* STUDYTIPS */
+.card:nth-child(8) { background-color: #ffdcc5; } /* LESSON */
+
+  .motivation-banner {
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+  .motivation-banner img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.motivation-text {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 10px;
+  color: #333;
+}
+
+ .theme-toggle {
+   position: absolute;
+   top: 20px; /* Sama seperti logout */
+   right: 120px; /* Biar ada jarak dari tombol logout */
+   font-size: 15px;
+   background: #52c9fc;
+   color: #ffffffce;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+  .dark-mode {
+    background-color: #000000;
+    color: #000000;
+}
+
+  #welcomeMessage {
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+  }
+  
+ header {
+  background-image: url("https://i.pinimg.com/736x/e7/36/85/e73685f7fa0b7ccd4354ee6910c2134f.jpg");
+  background-size: cover;       /* Biar gambar nutupin seluruh header */
+  background-position: center;  /* Posisi gambar di tengah */
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+  
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: calc(100% - 40px); /* lebih fleksibel */
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+  .card {
+    position: relative;
+    background: white;
+    padding: 30px 20px 20px 60px;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+}
+
+  .feature-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+  
+  .card:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+    transition: 0.2s ease-in-out;
+}
+
+  
+  
+  /* Mengatur posisi tombol Log Out di pojok kanan atas */
+  .logout-button {
+    position: absolute; /* Fixed agar tetap di posisi yang sama meskipun halaman scroll */
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    background-color: #ff6347; /* Warna tombol */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Menghilangkan garis bawah link */
+    z-index: 100; /* Pastikan tombol tetap di atas konten lain */
+  }
+
+  AP
+  /* Efek hover pada tombol */
+  .logout-button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Media Query untuk perangkat dengan ukuran layar lebih kecil */
+  @media screen and (max-width: 768px) {
+    .logout-button {
+      top: 15px; /* Menyesuaikan jarak dari atas */
+      right: 15px; /* Menyesuaikan jarak dari kanan */
+      padding: 8px 16px; /* Menyesuaikan padding agar lebih kecil pada layar kecil */
+      font-size: 14px; /* Mengubah ukuran font pada layar kecil */
+    }
+  }
+  
+ @media screen and (max-width: 480px) {
+  .logout-button {
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+    text-decoration: none;
+  }
+}
+
+
+a {
+  color: inherit; /* Warna link mengikuti warna elemen induknya */
+  text-decoration: none;
+} 
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilustudy - Focus Mode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stopwatch.css" />
+
+<body class="theme-light">
+<div class="app">
+<header>
+<h1>Ilustudy — Focus Mode</h1>
+<div class="controls-top">
+<label class="toggle">
+<input id="themeToggle" type="checkbox" />
+<span>Dark</span>
+</label>
+</div>
+</header>
+
+
+<main>
+<section class="presets">
+<button class="preset" data-minutes="15">15m</button>
+<button class="preset" data-minutes="30">30m</button>
+<button class="preset" data-minutes="45">45m</button>
+<button class="preset" data-minutes="60">1h</button>
+</section>
+
+
+<section class="player">
+<div class="left">
+<div class="countdown">00:00:00</div>
+<div class="progress"><div class="bar"></div></div>
+
+
+<div class="buttons">
+<button id="startBtn">Start</button>
+<button id="pauseBtn">Pause</button>
+<button id="stopBtn">Stop</button>
+</div>
+</div>
+
+
+<div class="right">
+<label for="playlist">Playlist</label>
+<select id="playlist">
+<option value="lofi">Lofi</option>
+<option value="rain">Rain</option>
+<option value="piano">Piano</option>
+</select>
+
+
+<div class="volume">
+<label for="vol">Volume</label>
+<input id="vol" type="range" min="0" max="1" step="0.01" value="0.6" />
+</div>
+</div>
+</section>
+
+
+<div id="message" class="message"></div>
+</main>
+
+
+<audio id="audio" loop preload="auto"></audio>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

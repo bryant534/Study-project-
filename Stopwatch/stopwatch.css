@@ -1,0 +1,29 @@
+:root{
+--bg: #eaf6ff; /* pastel blue */
+--card:#ffffff;
+--text:#0b2545;
+--accent:#7fb3ff;
+}
+.theme-dark{
+--bg:#0b1220;
+--card:#0f1724;
+--text:#d7e7ff;
+--accent:#5b8bd6;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, sans-serif;background:var(--bg);color:var(--text);margin:0;padding:24px}
+.app{max-width:900px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+h1{margin:0;font-size:20px}
+.presets{display:flex;gap:10px;margin-bottom:16px}
+.preset{background:var(--card);border:1px solid rgba(0,0,0,0.06);padding:10px 14px;border-radius:10px;cursor:pointer}
+.player{display:flex;justify-content:space-between;gap:20px;background:var(--card);padding:18px;border-radius:12px;align-items:center}
+.countdown{font-size:28px;font-weight:600;margin-bottom:8px}
+.progress{background:rgba(11,37,69,0.08);height:10px;border-radius:8px;overflow:hidden}
+.progress .bar{height:100%;width:0%;background:var(--accent)}
+.buttons button{margin-right:8px;padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+.controls-top{display:flex;align-items:center;gap:8px}
+.message{margin-top:14px;padding:12px;border-radius:8px;display:none}
+.toggle{display:flex;gap:8px;align-items:center}
+.toggle input{transform:scale(1.15)}
+select,input[type=range]{margin-top:8px}
